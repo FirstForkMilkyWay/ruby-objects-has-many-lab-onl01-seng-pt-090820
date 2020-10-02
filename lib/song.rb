@@ -20,12 +20,12 @@ class Song
   end 
   
   def artist_name 
-    if @artist.name == nil
+    if self.artist
+      self.artist.name
+    else
       nil
-    else 
-      @artist.name
-    end 
-  end 
+    end
+  end
   
   
   
