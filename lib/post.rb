@@ -14,8 +14,12 @@ class Post
   end 
   
   def author_name
-    @author.name
-  end 
+    if self.author
+      self.author.name
+    else
+      nil
+    end
+  end
   
   
 end 
